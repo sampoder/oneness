@@ -85,7 +85,6 @@ const VideoPlayer: React.FC<Props> = ({ playbackId, poster, onLoaded, onError })
         hls.attachMedia(video);
         hls.on(Hls.Events.ERROR, function (event, data) {
           if (data.fatal) {
-            logger.error('hls.js fatal error');
             videoError(new ErrorEvent('HLS.js fatal error'));
           }
         });

@@ -95,17 +95,17 @@ const Playback: React.FC<Props> = ({ playbackId, shareUrl, poster }) => {
       {showLoading && <FullpageLoader text="Loading player" />}
       <div className="wrapper">
         {!openReport && <VideoPlayer playbackId={playbackId} poster={poster} onLoaded={() => setIsLoaded(true)} onError={onError} />}
-        <div className="actions">
-          {!openReport && <a onClick={copyUrl} onKeyPress={copyUrl} role="button" tabIndex={0}>{ isCopied ? 'Copied to clipboard' :'Copy video URL' }</a>}
-          {!openReport && (
-            <a
+        <div className="actions" style={{ textAlign: 'center' }}>
+          <div className="footer-link mux">The Oneness Play</div>
+          <br />
+          <a
               onClick={() => setOpenReport(!openReport)}
               onKeyPress={() => setOpenReport(!openReport)}
               role="button"
               tabIndex={0}
-              className="report">{ openReport ? 'Back' : 'Report abuse' }
+              style={{ textAlign: 'center', paddingTop: '10px'}}
+              className="report">by Student Council
             </a>
-          )}
         </div>
         <div className="report-form">
           { openReport && <ReportForm playbackId={playbackId} close={() => setOpenReport(false)} /> }
@@ -127,6 +127,14 @@ const Playback: React.FC<Props> = ({ playbackId, shareUrl, poster }) => {
           flex-grow: 1;
           align-items: center;
           justify-content: center;
+        }
+        .footer-link {
+          font-size: 36px;
+          line-height: 33px;
+          mix-blend-mode: exclusion;
+          color: #f8f8f8;
+          opacity: 0.85;
+          text-align: center;
         }
       `}
       </style>
