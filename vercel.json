@@ -1,3 +1,6 @@
 {
-  "github":{"silent": true}
+  "github":{"silent": true},
+  "rewrites": [
+    { "source": "/", "destination": "/00GOFN6i1DveaOlsqGVaHA00mvgREH35NiKbvjJDC3Grc" }
+  ]
 }
