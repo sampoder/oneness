@@ -18,7 +18,7 @@ export const getStaticProps: GetStaticProps = async (context)  => {
   const poster = `https://image.mux.com/${playbackId}/thumbnail.png`;
   const shareUrl = `${HOST_URL}/v/${playbackId}`;
 
-  return { props: { playbackId, shareUrl, poster } };
+  return { props: { playbackId: '00GOFN6i1DveaOlsqGVaHA00mvgREH35NiKbvjJDC3Grc', shareUrl, poster } };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
