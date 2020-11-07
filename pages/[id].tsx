@@ -87,7 +87,7 @@ const Playback: React.FC<Props> = ({ playbackId, shareUrl, poster }) => {
   return (
     <Layout
       metaTitle={META_TITLE}
-      image={poster}
+      image={"https://cloud-chv0h2jb1.vercel.app/0screenshot_2020-11-07_at_9.26.49_pm.png"}
       centered={showLoading}
       darkMode
     >
