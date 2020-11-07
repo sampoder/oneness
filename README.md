@@ -1,2 +1,2 @@
-# oneness
-🤗 Website container for the Oneness Play
+# 👨‍👨‍👧 oneness
+Website container for the Oneness Play
