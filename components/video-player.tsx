@@ -2,7 +2,6 @@
 import { useState, useEffect, useRef } from 'react';
 import Hls from 'hls.js';
 import mux from 'mux-embed';
-import logger from '../lib/logger';
 import { breakpoints } from '../style-vars';
 
 /*
