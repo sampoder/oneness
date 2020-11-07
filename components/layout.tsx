@@ -69,8 +69,7 @@ const Layout: React.FC<Props> = ({
   return (
     <>
       <Head>
-        <title>stream.new</title>
-        <link rel="icon" href="/stream-new-asterisk.svg" />
+        <title>The Oneness Play by Student Council</title>
         {metaTitle && <meta property="og:title" content={metaTitle} />}
         {metaTitle && <meta property="twitter:title" content={metaTitle} />}
         {metaDescription && (

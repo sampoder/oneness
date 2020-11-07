@@ -34,7 +34,7 @@ type Props = {
   poster: string
 };
 
-const META_TITLE = "View this video created on stream.new";
+const META_TITLE = "The Oneness Play by Student Council";
 const Playback: React.FC<Props> = ({ playbackId, shareUrl, poster }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
@@ -52,8 +52,8 @@ const Playback: React.FC<Props> = ({ playbackId, shareUrl, poster }) => {
   if (router.isFallback) {
     return (
       <Layout
-        metaTitle="View this video created on stream.new"
-        image={poster}
+        metaTitle="The Oneness Play by Student Council"
+        image={"https://cloud-chv0h2jb1.vercel.app/0screenshot_2020-11-07_at_9.26.49_pm.png"}
         centered
         darkMode
       >
