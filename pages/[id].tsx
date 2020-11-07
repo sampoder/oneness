@@ -14,7 +14,7 @@ type Params = {
 
 export const getStaticProps: GetStaticProps = async (context)  => {
   const { params } = context;
-  const { id: playbackId } = (params as Params);
+  const playbackId  = '00GOFN6i1DveaOlsqGVaHA00mvgREH35NiKbvjJDC3Grc';
   const poster = `https://image.mux.com/${playbackId}/thumbnail.png`;
   const shareUrl = `${HOST_URL}/v/${playbackId}`;
 
