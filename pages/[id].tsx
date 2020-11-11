@@ -14,11 +14,11 @@ type Params = {
 
 export const getStaticProps: GetStaticProps = async (context)  => {
   const { params } = context;
-  const playbackId  = '00GOFN6i1DveaOlsqGVaHA00mvgREH35NiKbvjJDC3Grc';
+  const playbackId  = 'LaYV5UY5I8PuAstNsW6n5akP3WRCEWZSGQvvvyH01eZA';
   const poster = `https://image.mux.com/${playbackId}/thumbnail.png`;
   const shareUrl = `${HOST_URL}/v/${playbackId}`;
 
-  return { props: { playbackId: '00GOFN6i1DveaOlsqGVaHA00mvgREH35NiKbvjJDC3Grc', shareUrl, poster } };
+  return { props: { playbackId: 'LaYV5UY5I8PuAstNsW6n5akP3WRCEWZSGQvvvyH01eZA', shareUrl, poster } };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
